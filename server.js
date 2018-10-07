@@ -44,6 +44,12 @@ hbs.registerHelper('screamIt', (text) =>{
  		pageTitle:"About Page",
  	});
  });
+ app.get('/projects',(req,res) => {
+ 	res.render('projects.hbs',{
+ 		pageTitle:'Projects',
+ 		welcomeMessage:"Welcome to Portifolio"
+ 	});
+ });
  app.get('/bad', (req,res) => {
  	res.send({
  		name : 'Avinash',
